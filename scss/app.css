@@ -141,6 +141,7 @@
 
 .loading-screen-section__content-wrapper .mySwiper .swiper-wrapper .swiper-slide .background--video .video-src {
   width: 100%;
+  height: 100vh;
 }
 
 .loading-screen-section__content-wrapper .mySwiper .swiper-wrapper .swiper-slide .loadingbar-wrapper {
