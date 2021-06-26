@@ -1,0 +1,142 @@
+.loading-screen-section {
+    width: 100%;
+    @include center();
+    &__content-wrapper {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        @include center();
+        .mySwiper {
+            width: 100%;
+            height: 100%;
+            .swiper-wrapper {
+                width: 100%;
+                height: 100%;
+                .swiper-slide {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    @include center();
+
+                    .header-content-wrapper {
+                        position: absolute;
+                        z-index: 2;
+                        @include center-column();
+                        .subheading {
+                            font-size: 30px;
+                            margin-bottom: 70px;
+                        }
+                        .heading {
+                            font-size: 99px;
+                            letter-spacing: 0.145em;
+                            font-weight: bold;
+                            margin-bottom: 70px;
+                        }
+                        .next--btn {
+                            font-size: 30px;
+                            color: $font-color-white;
+                            background: transparent;
+                            border: none;
+                            position: relative;
+                            @include center();
+                            cursor: pointer;
+                            &::before {
+                                width: 25px;
+                                height: 2px;
+                                background: $font-color-white;
+                                content: '';
+                                left: -40px;
+                                transform: translateY(2px);
+                                position: absolute;
+                            }
+                            &::after {
+                                width: 25px;
+                                height: 2px;
+                                background: $font-color-white;
+                                content: '';
+                                right: -40px;
+                                transform: translateY(2px);
+                                position: absolute;
+                            }
+                        }
+                    }
+
+                    .background--video {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        z-index: 1;
+                        &::before {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            background: $backgourd-color;
+                            content: '';
+                            opacity: .3;
+                        }
+                        .video-src {
+                            width: 100%;
+                        }
+                    }  
+                    .loadingbar-wrapper {
+                        width: 30%;
+                        height: 22px;
+                        background: #303030;
+                        position: absolute;
+                        z-index: 2;
+                        bottom: 120px;
+                        border: 2px solid #D4D0D0;
+                        border-radius: 11px;
+                        overflow: hidden;
+                        @include center();
+                      
+                        .loader-progress {
+                            width: 10%;
+                            height: 22px;
+                            background: $font-color-white;
+                            left: 0;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+        }
+        .logo-wrapper {
+            width: 100px;
+            height: 100px;
+            background: white;
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            right: 0;
+            margin: 30px;
+        }
+
+        .social-wrapper {
+            @include center-column();
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            margin: 30px;
+            z-index: 2;
+            .social--item {
+                width: 100%;
+                color: white;
+                @include center-left();
+                text-decoration: none;
+                margin-bottom: 20px;
+                font-size: 30px;
+                i {
+                    @include center();
+                    width: 36px;
+                    font-size: 40px;
+                    margin-right: 20px;
+                }
+            }
+        }
+
+    }
+     
+}

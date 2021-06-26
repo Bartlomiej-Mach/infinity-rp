@@ -1,0 +1,99 @@
+//COLORS
+$backgourd-color: #000;
+$background-color-2: #0F0F0F;
+
+$font-color-white: #fff;
+$font-color-black: #000;
+
+
+//fonts
+$subheading-font: 'Oswald', sans-serif;
+$heading-font: 'Spartan', sans-serif;
+
+
+
+@mixin center-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin center-top-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+@mixin center-bottom-right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin center-top-column {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+@mixin center-right-column {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+@mixin center-space {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin center-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@mixin center-left-column {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin center-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@mixin center-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@mixin center-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+

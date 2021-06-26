@@ -1,0 +1,42 @@
+@import "./variables/_variables.scss";
+@import "./section-header/section-header";
+
+body, html {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #000;
+    position: relative;
+    @include center-column();
+    scroll-behavior: smooth;
+    color: $font-color-white;
+}
+
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: $heading-font;
+
+}
+span, a, button {
+    font-family: $subheading-font;
+}
+
+
+body::-webkit-scrollbar {
+    width: 5px;
+    background: $font-color-black;
+  }
+body::-webkit-scrollbar-thumb {
+    background: $font-color-white;
+    
+}
